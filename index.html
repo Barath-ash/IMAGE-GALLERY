@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+     
+     <div id="heading">
+        <h1>Image Gallery</h1>
+     </div>
+    <div class="full-img-box" id="img-box">
+      <img
+        src="./Assets/img1.jpg"
+        alt="loading..."
+        class="full-img"
+        id="full_img" />
+      <span onclick="closeimage()">X</span>
+    </div>
+
+    <div class="img-gallery">
+      <img
+        src="./Assets/img1.jpg"
+        alt="loading...."
+        onclick="openimage(this.src)" />
+      <img
+        src="./Assets/img2.jpg"
+        alt="loading....  "
+        onclick="openimage(this.src)" />
+      <img
+        src="./Assets/img3.jpg"
+        alt="loading....  "
+        onclick="openimage(this.src)" />
+      <img
+        src="./Assets/img4.jpg"
+        alt="loading....  "
+        onclick="openimage(this.src)" />
+      <img
+        src="./Assets/img5.jpg"
+        alt="loading....  "
+        onclick="openimage(this.src)" />
+      <img
+        src="./Assets/img6.jpg"
+        alt="loading....  "
+        onclick="openimage(this.src)" />
+      <img
+        src="./Assets/img7.jpg"
+        alt="loading....  "
+        onclick="openimage(this.src)" />
+      <img
+        src="./Assets/img8.jpg"
+        alt="loading....  "
+        onclick="openimage(this.src)" />
+    </div>
+    <script>
+      var imagebox = document.getElementById("img-box");
+      var fullimage = document.getElementByIdt("full_img");
+
+      function openimage(source) {
+        imagebox.style.display = "flex";
+        fullimage.src = source;
+      }
+
+      function closeimage() {
+        imagebox.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
